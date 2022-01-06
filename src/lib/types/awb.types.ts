@@ -1,0 +1,23 @@
+export type createAwbProps = {
+    sender_id : number|string,
+    origin_city: number|string|"City Id",
+    origin_twsp_id: number|string|"Township Id",
+    dest_city: number|string,
+    dest_twsp_id: number|string,
+    receiver_id?: number|string|undefined,
+    receiver_name: string,
+    receiver_mobile: string,
+    goods_type: string,
+    service_priority: "priority"|"regular"|string,
+    service_type_id: number|string,
+    payment_type_id: number|string,
+    cod_amount: number|string,
+    delivery_charges: number|string,
+    description: string,
+    remark: string,
+    weight: number,
+    state?: "draft",
+    create_uid: number|string,
+    customer_reference: number|string,
+    receiver_full_address?:string
+}

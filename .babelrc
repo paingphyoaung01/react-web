@@ -1,0 +1,27 @@
+{
+    "presets": [
+        "@babel/preset-env",
+        "@babel/preset-typescript",
+        "@babel/preset-react"
+    ],
+    "plugins": [
+        ["transform-imports", {
+            "react-icons": {
+              "transform": "react-icons/${member}",
+              "preventFullImport": true
+            },
+            "react-icons": {
+                "transform": "react-icons/${member}",
+                "preventFullImport": true
+              },
+            "@material-ui": {
+              "transform": "@material-ui/${member}",
+              "preventFullImport": true
+            }
+          }],
+        "transform-regenerator",
+        "@babel/proposal-class-properties",
+        "@babel/proposal-object-rest-spread",
+        "@babel/plugin-transform-runtime"
+    ]
+}
